@@ -1,0 +1,6 @@
+Proposed syntax:
+
+def foo
+    # @cr BITCH-1 brianm should consider using '' instead of "" for performance
+    puts "hello world"
+end
