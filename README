@@ -10,7 +10,7 @@ whatnot.
 Proposed syntax:
 
 def foo
-    # @cr BITCH-1 brianm use '' instead of "" for performance
+    # @cr GLITCH-1 brianm use '' instead of "" for performance
     puts "hello world"
 end
 
@@ -31,7 +31,7 @@ Alternatively, we can support a system where a blank comment means
 leading <stuff> is different," for example:
 
 def foo
-    # @cr BITCH-1 brianm
+    # @cr GLITCH-1 brianm
     # might want to consider using '' instead of "" for
     # performance. Of course, if that boost matters, consider
     # looking up K&R's implementation.
@@ -44,7 +44,7 @@ between, but that would open the door for putting non-comments in,
 which could lead to confusion:
 
 def foo
-    # @cr BITCH-1 brianm {
+    # @cr GLITCH-1 brianm {
     # might want to consider using '' instead of "" for
     # performance. Of course, if that boost matters, consider
     # looking up K&R's implementation.
