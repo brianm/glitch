@@ -1,6 +1,16 @@
+Glitch is a way of doing code reviews. The core concept in glitch is that code review comments should flow with the code. The base layer is just a set of conventions for annotation comments in the source code. Above that can be built web UIs (review board, crucible, etc), workflows (filing a review creates a review branch, folks check comments in there, updates based on the review happen there, the branch is merged into the main line upon review completion), or whatnot.
+
 Proposed syntax:
 
 def foo
     # @cr BITCH-1 brianm should consider using '' instead of "" for performance
     puts "hello world"
 end
+
+The specifices are:
+
+<stuff> @cr <review id> <user id> <comment>
+
+Where stuff should generally be whitespace and line comment indicator. Review ID is chosen by the review initiator, should probably be unique. User id is who is leaving the comment, comment is... well, the code review comment!
+
+The first part to figure out is a basic comment syntax which is easy to do by hand, easy to extract, and whatnot.
