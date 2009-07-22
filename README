@@ -16,7 +16,7 @@ end
 
 The specifices are:
 
-<stuff> @cr <review id> <user id> <comment>
+<stuff> @cr <review-id> <user-id> <comment>
 
 Where stuff should generally be whitespace and line comment
 indicator. Review ID is chosen by the review initiator, should
