@@ -38,20 +38,4 @@ def foo
     puts "hello world"
 end
 
-In this case a much longer comment is more pleasently formatted. An
-alternative would be an explicit begin/end and take everything in
-between, but that would open the door for putting non-comments in,
-which could lead to confusion:
-
-def foo
-    # @cr GLITCH-1 brianm {
-    # might want to consider using '' instead of "" for
-    # performance. Of course, if that boost matters, consider
-    # looking up K&R's implementation.
-    printf("hello, world");
-    # or something like that, but pointedly in C
-    # @cr }
-    puts "hello world"
-end
-
-Aside from the errant change to the source, it is kind of ugly.
+In this case a much longer comment is more pleasently formatted. 
